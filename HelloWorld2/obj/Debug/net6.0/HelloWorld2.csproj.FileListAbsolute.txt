@@ -12,4 +12,3 @@ C:\Projekt\HelloWorld2\HelloWorld2\obj\Debug\net6.0\refint\HelloWorld2.dll
 C:\Projekt\HelloWorld2\HelloWorld2\obj\Debug\net6.0\HelloWorld2.pdb
 C:\Projekt\HelloWorld2\HelloWorld2\obj\Debug\net6.0\HelloWorld2.genruntimeconfig.cache
 C:\Projekt\HelloWorld2\HelloWorld2\obj\Debug\net6.0\ref\HelloWorld2.dll
-C:\Projekt\HelloWorld2\HelloWorld2\obj\Debug\net6.0\HelloWorld2.sourcelink.json
