@@ -1,57 +1,73 @@
-﻿namespace HelloWorld2
+﻿using System.Text;
+
+namespace HelloWorld2
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            // Числовые
-            int a = 2;
-            int b = 2;
-            int sum = a + b;
-            Console.WriteLine(sum);
-            int sum2 = a / b;
-            Console.WriteLine(sum2);
-            int sum3 = a * b;
-            Console.WriteLine(sum3);
+            Console.OutputEncoding = Encoding.UTF8;
 
-            // Строки
-            string S1 = "Stas";
-            string s2 = "Kotow";
-            string Name = S1 + " " + s2;
+            int cost = 50;
 
-            Console.WriteLine(Name);
+            if (cost == 5 ) 
+            {
+             Console.WriteLine("Число не равно 50");
+            }
+            if (cost <10 ) 
+            {
+              Console.WriteLine("Число больше 10");
+            }
+            if(cost <= 25 ) 
+            {
 
-            // ЛОгические
+                Console.WriteLine("Число меньше или равно 25");
+            }
+            if (cost == 50)
+            {
+                Console.WriteLine("Число равно 50");
+            }
+            if (cost > 50)
+            {
+                Console.WriteLine("Число больше 50");
+            }
+            if (cost != 100)
+            {
+                Console.WriteLine("Число не равно 100");
+            }
 
-            bool l1 = true;
-            bool l2 = false;
 
-            bool resl = l1 && l2;
-            Console.WriteLine(resl);
-
-            bool resl1 = l1 != l2;
-            Console.WriteLine(resl1);
-
-            bool resl2 = l1 || l2;
-            Console.WriteLine(resl2);
-
+            switch (cost)
             
+            {
+                case 5: Console.WriteLine("Число равно 5");
 
-            bool resl3 = a >= b;
+                    break;
 
-            Console.WriteLine(resl3);
 
-            bool resl4 = a <= b;
-            Console.WriteLine(resl4);
 
-            bool resl5 = a < b;
-            Console.WriteLine(resl5);
+                case 10:
 
-            bool resl6 = a > b;
-            Console.WriteLine(resl6);
+                    Console.WriteLine("Число равно 10");
 
-            
+                    break;
 
+
+                case 25:
+
+                    Console.WriteLine("Число равно 25");
+                    break;
+
+               case 50:
+                    Console.WriteLine("Число равно 50");
+                        break;
+                
+                case 100:
+                    Console.WriteLine("Число равно 100");
+                        break;
+                    
+
+            }
 
 
         }
