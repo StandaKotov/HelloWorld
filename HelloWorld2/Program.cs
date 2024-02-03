@@ -1,31 +1,73 @@
-﻿namespace HelloWorld2
+﻿using System.Text;
+
+namespace HelloWorld2
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            string myName = "Stas";
+            Console.OutputEncoding = Encoding.UTF8;
 
-            string YourName;
-            YourName = myName;
+            int cost = 50;
 
-            Console.WriteLine(YourName);
+            if (cost == 5 ) 
+            {
+             Console.WriteLine("Число не равно 50");
+            }
+            if (cost <10 ) 
+            {
+              Console.WriteLine("Число больше 10");
+            }
+            if(cost <= 25 ) 
+            {
+
+                Console.WriteLine("Число меньше или равно 25");
+            }
+            if (cost == 50)
+            {
+                Console.WriteLine("Число равно 50");
+            }
+            if (cost > 50)
+            {
+                Console.WriteLine("Число больше 50");
+            }
+            if (cost != 100)
+            {
+                Console.WriteLine("Число не равно 100");
+            }
 
 
-            bool isAlive = false;
-            bool isRunning = true;
-               
-            int int1 = 2147483647;
-            int startInt = -2147483648;
+            switch (cost)
+            
+            {
+                case 5: Console.WriteLine("Число равно 5");
 
-            long long1 = 9223372036854775807;
-            long startLong = 9223372036854775807;
+                    break;
 
-            float float1 = 3.402823f;
-            double double1 = 1.79;
 
-            char char1 = 'a';
-            char char2 = 'b';
+
+                case 10:
+
+                    Console.WriteLine("Число равно 10");
+
+                    break;
+
+
+                case 25:
+
+                    Console.WriteLine("Число равно 25");
+                    break;
+
+               case 50:
+                    Console.WriteLine("Число равно 50");
+                        break;
+                
+                case 100:
+                    Console.WriteLine("Число равно 100");
+                        break;
+                    
+
+            }
 
 
         }
