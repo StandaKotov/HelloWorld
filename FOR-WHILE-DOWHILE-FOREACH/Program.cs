@@ -69,6 +69,7 @@ class Program
             Console.WriteLine("Элемент " + number + " меньше или равен 30");
         }
    
+
     }
 }
 
